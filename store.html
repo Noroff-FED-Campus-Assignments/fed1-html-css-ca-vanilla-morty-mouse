@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamehub</title>
+    <meta name="author" content="Morten Lillehaug" />
+    <meta
+      name="keywords"
+      content="games, playstation, xbox, nintendo, webshop"
+    />
+    <meta name="title" content="Gamehub" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-mobile">
+      <div>
+        <a href="index.html" class="header-link">
+          <img
+            src="media/GameHub_Logo.png"
+            alt="gamehub logo"
+            class="header-logo"
+        /></a>
+      </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <a href="index.html">Home Page</a>
+        <a href="store.html">Store</a>
+        <a href="">Library</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="">My Profile</a>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <div class="slider-wrapper">
+          <div class="slider-nav">
+            <a href="#slide-1"> </a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+          <div class="slider">
+            <img
+              src="media/image.jpg"
+              alt="call of duty black ops 6"
+              class="store-hero-img"
+              id="slide-1"
+            />
+            <img
+              src="media/black-myth-mobile-store-hero.jpg"
+              alt=""
+              class="store-hero-img"
+              id="slide-2"
+            />
+            <img
+              src="media/zelda_small.jpg"
+              alt=""
+              class="store-hero-img"
+              id="slide-3"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="dropdown">
+        <div class="dropdown-categories">
+          <label for="sort-by"></label>
+          <select name="sort-by" id="sort-by">
+            <option value="default" disabled selected hidden>Sort By</option>
+            <option value="price">Price</option>
+            <option value="rating">Rating</option>
+            <option value="title">Title A-Z</option>
+          </select>
+
+          <label for="category"></label>
+          <select name="category" id="category">
+            <option value="default" disabled selected hidden>
+              Select Category
+            </option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="fps">First Person Shooter</option>
+            <option value="family">Family</option>
+            <option value="horror">Horror</option>
+            <option value="indie">Indie</option>
+            <option value="multiplayer">Multiplayer</option>
+            <option value="open world">Open World</option>
+            <option value="single-player">Single Player</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input type="text" class="search-bar" placeholder="Search:" />
+        </div>
+      </section>
+
+      <section class="store-section">
+        <h1>Explore new releases</h1>
+        <div class="store-info">
+          <p>Browse all</p>
+        </div>
+        <section class="trending-horizontal">
+          <a href="product-detail.html">
+            <img
+              src="media/alan-wake-small.jpg"
+              alt="Black Myth Wukong"
+              class="horizontal-image"
+            />
+          </a>
+          <img
+            src="media/last-of-us-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/sea-of-thieves-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/baldurs-gate-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/star-wars-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/ghost-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+        </section>
+      </section>
+
+      <section>
+        <h1>Currently trending</h1>
+        <div class="store-info">
+          <p>Browse all</p>
+        </div>
+        <section class="trending-horizontal">
+          <img
+            src="media/cyberpunk-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/resident-evil-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/last-of-us-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/black_myth.jpeg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/fallout.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/black_myth.jpeg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+        </section>
+      </section>
+
+      <section>
+        <h1>Pre-order</h1>
+        <div class="store-info">
+          <p>Browse all</p>
+        </div>
+        <section class="trending-horizontal">
+          <img
+            src="media/helldivers-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/god-of-war-small.jpg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/black_myth.jpeg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/black_myth.jpeg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/black_myth.jpeg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+          <img
+            src="media/black_myth.jpeg"
+            alt="Black Myth Wukong"
+            class="horizontal-image"
+          />
+        </section>
+      </section>
+
+      <section class="select-console-mobile">
+        <i class="fa-brands fa-playstation"></i>
+        <i class="fa-brands fa-xbox"></i>
+        <i class="fa-solid fa-computer"></i>
+        <i class="fa-solid fa-gamepad"></i>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h3>Company</h3>
+        <p>Contact us</p>
+        <p>About</p>
+        <p>Sponsor</p>
+      </section>
+      <section>
+        <h3>Resources</h3>
+        <p>Terms and conditions</p>
+        <p>Privacy policy</p>
+        <p>Blog</p>
+      </section>
+      <section class="footer-social-media">
+        <p>Follow us on:</p>
+        <div class="footer-media-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

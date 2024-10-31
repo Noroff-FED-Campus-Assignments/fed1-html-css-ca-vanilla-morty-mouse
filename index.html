@@ -3,27 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>_REPLACE_WITH_YOUR_TITLE</title>
+    <title>Gamehub</title>
+    <meta name="author" content="Morten Lillehaug" />
+    <meta
+      name="keywords"
+      content="games, playstation, xbox, nintendo, webshop"
+    />
+    <meta name="title" content="Gamehub" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="">
-      <h1>_REPLACE_H1_</h1>
+    <header class="header-mobile">
+      <div>
+        <a href="index.html" class="header-link">
+          <img
+            src="media/GameHub_Logo.png"
+            alt="gamehub logo"
+            class="header-logo"
+        /></a>
+      </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <a href="index.html">Home Page</a>
+        <a href="store.html">Store</a>
+        <a href="">Library</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="">My Profile</a>
+      </nav>
     </header>
+    <main>
+      <section class="hero-section">
+        <article class="hero-content">
+          <h1>Welcome to gamehub</h1>
+          <p>
+            Welcome to Gamehub, your ultimate destination for purchasing digital
+            games across all platforms!
+          </p>
+        </article>
+        <a href="store.html" class="c-btn btn-hero">Explore games</a>
+      </section>
 
-    <main class="">
-      <article>
-        <p>
-          Main content goes here. You can replaced this with whatever you want.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ipsa,
-          ducimus consequuntur dicta sunt perferendis quisquam corporis,
-          repellat labore eos ut harum qui sed, nam minima consequatur sit
-          officia est.
-        </p>
-      </article>
+      <section class="trending-section">
+        <h2>Explore new releases</h2>
+        <section class="trending-col">
+          <img
+            src="media/fifa.jpeg"
+            alt="Black Myth Wukong"
+            class="grid-image"
+          />
+          <img
+            src="media/fifa.jpeg"
+            alt="Black Myth Wukong"
+            class="grid-image"
+          />
+          <img
+            src="media/helldivers-small.jpg"
+            alt="Black Myth Wukong"
+            class="grid-image"
+          />
+          <img
+            src="media/gta-small.png"
+            alt="Black Myth Wukong"
+            class="grid-image"
+          />
+          <img
+            src="media/ghost-small.jpg"
+            alt="Black Myth Wukong"
+            class="grid-image"
+          />
+          <img
+            src="media/ghost-small.jpg"
+            alt="Black Myth Wukong"
+            class="grid-image"
+          />
+        </section>
+
+        <section>
+          <h2>Explore new releases</h2>
+          <section class="trending-horizontal">
+            <img
+              src="media/black_myth.jpeg"
+              alt="Black Myth Wukong"
+              class="horizontal-image"
+            />
+            <img
+              src="media/black_myth.jpeg"
+              alt="Black Myth Wukong"
+              class="horizontal-image"
+            />
+            <img
+              src="media/black_myth.jpeg"
+              alt="Black Myth Wukong"
+              class="horizontal-image"
+            />
+            <img
+              src="media/black_myth.jpeg"
+              alt="Black Myth Wukong"
+              class="horizontal-image"
+            />
+            <img
+              src="media/black_myth.jpeg"
+              alt="Black Myth Wukong"
+              class="horizontal-image"
+            />
+            <img
+              src="media/black_myth.jpeg"
+              alt="Black Myth Wukong"
+              class="horizontal-image"
+            />
+          </section>
+        </section>
+      </section>
+
+      <!-- <section class="currently-trending">
+        <div class="currently-trending-hero">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ayeQ3CTLlMU?si=BIohWO05jp0AmbJu"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="in-game-footage"
+            ><link type="text/css" rel="Stylesheet" href="Style/simple.css" />
+          </iframe>
+          <p>
+            Join Peter Parker and Miles Morales in an exhilarating new
+            adventure.
+          </p>
+          <a href="store.html" class="c-btn c-btn-small"> See more</a>
+        </div>
+      </section> -->
+      <section class="currently-trending">
+        <img
+          src="media/spider_man_banner.jpg"
+          alt="spider man 2 banner photo"
+          class="currently-trending-hero-img"
+        />
+        <div class="currently-trending-row">
+          <iframe
+            width="560px"
+            height="315px"
+            src="https://www.youtube.com/embed/ayeQ3CTLlMU?si=BIohWO05jp0AmbJu"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="in-game-footage"
+            ><link type="text/css" rel="Stylesheet" href="Style/simple.css" />
+          </iframe>
+          <div class="currently-trending-column">
+            <p>
+              Join Peter Parker and Miles Morales in an exhilarating new
+              adventure.
+            </p>
+            <a href="store.html" class="c-btn-small trending-btn"> See more</a>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer class="">
-      Created with ❤️ by <a href="https://github.com/S3ak">You</a>
+    <footer>
+      <section>
+        <h3>Company</h3>
+        <p>Contact us</p>
+        <p>About</p>
+        <p>Sponsor</p>
+      </section>
+      <section>
+        <h3>Resources</h3>
+        <p>Terms and conditions</p>
+        <p>Privacy policy</p>
+        <p>Blog</p>
+      </section>
+      <section class="footer-social-media">
+        <p>Follow us on:</p>
+        <div class="footer-media-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

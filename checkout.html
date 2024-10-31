@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamehub</title>
+    <meta name="author" content="Morten Lillehaug" />
+    <meta
+      name="keywords"
+      content="games, playstation, xbox, nintendo, webshop"
+    />
+    <meta name="title" content="Gamehub" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-mobile">
+      <div>
+        <a href="index.html" class="header-link">
+          <img
+            src="media/GameHub_Logo.png"
+            alt="gamehub logo"
+            class="header-logo"
+        /></a>
+      </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <a href="index.html">Home Page</a>
+        <a href="store.html">Store</a>
+        <a href="">Library</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="">My Profile</a>
+      </nav>
+    </header>
+    <main class="main-checkout">
+      <div class="backdrop-filter">
+        <h1>Enter card details:</h1>
+        <form class="checkout-form-container" action="/checkout-success.html">
+          <section class="form-mobile-icons">
+            <img src="media/mastercard-mobile.png" alt="icon of mastercard" />
+            <img src="media/visa-mobile.png" alt="icon of visa" />
+            <img src="media/vipps-mobile.png" alt="icon of vipps" />
+          </section>
+
+          <label for="form-full-name"> Name of card holder:</label>
+          <input
+            type="text"
+            id="form-full-name"
+            name="form-full-name"
+            placeholder="Bob Johanson.."
+          />
+          <label for="form-card-details">Card details</label>
+          <input
+            type="number"
+            id="form-card-details"
+            name="form-card-details"
+            placeholder="XXXX.XXXX.XXXX.XXXX"
+          />
+          <div class="form-row">
+            <div>
+              <div class="form-column-date">
+                <label for="form-month">Month</label>
+                <input
+                  type="number"
+                  id="form-month"
+                  name="form-month"
+                  placeholder="11"
+                />
+              </div>
+              <div class="form-column-date">
+                <label for="form-year">Year</label>
+                <input
+                  type="number"
+                  id="form-year"
+                  name="form-year"
+                  placeholder="1995"
+                />
+              </div>
+            </div>
+            <div class="form-column--security">
+              <label for="form-security-code">Security code:</label>
+              <input
+                type="number"
+                name="form-security-code"
+                id="form-security-code"
+                placeholder="911"
+              />
+            </div>
+          </div>
+          <label for="form-country">Country</label>
+          <select name="form-country" id="form-country" placeholder="Country">
+            <option value="Australia">Australia</option>
+            <option value="denmark">Denmark</option>
+            <option value="norway">Norway</option>
+            <option value="england">England</option>
+            <option value="usa">Usa</option>
+            <option value="south-africa">South Africa</option>
+          </select>
+
+          <label for="form-adress">Billing adress:</label>
+          <input
+            type="text"
+            name="form-adress"
+            id="form-adress"
+            placeholder="Storgata 25"
+          />
+          <label for="form-city"> City/State:</label>
+          <input
+            type="text"
+            id="form-city"
+            name="form-city"
+            placeholder="Oslo"
+          />
+          <label for="form-zip-code">Zip Code:</label>
+          <input
+            type="text"
+            id="form-zip-code"
+            name="form-zip-code"
+            placeholder="2322"
+          />
+
+          <div class="form-cta">
+            <a href="product-detail.html" class="c-mobile-btn">Cancel</a>
+            <a href="checkout-success.html" class="c-mobile-btn">Confirm</a>
+
+            <!-- <input
+              type="submit"
+              value="Confirm"
+              class="c-mobile btn"
+              id="c-btn-confirm"
+            /> -->
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <h3>Company</h3>
+        <p>Contact us</p>
+        <p>About</p>
+        <p>Sponsor</p>
+      </section>
+      <section>
+        <h3>Resources</h3>
+        <p>Terms and conditions</p>
+        <p>Privacy policy</p>
+        <p>Blog</p>
+      </section>
+      <section class="footer-social-media">
+        <p>Follow us on:</p>
+        <div class="footer-media-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
