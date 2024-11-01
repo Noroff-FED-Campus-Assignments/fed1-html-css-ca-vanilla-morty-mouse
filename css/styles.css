@@ -38,6 +38,7 @@
 
   /* Margin */
   --margin-mobile-sides: 40px;
+  --margin-bottom-mobile: 25px;
 }
 
 h1,
@@ -564,7 +565,10 @@ footer {
 .product-edition {
   display: flex;
   flex-direction: column;
-  background-color: #171616;
+}
+
+.product-edition p:first-child {
+  margin-bottom: 4px;
 }
 
 .edition-horizontal {
@@ -683,6 +687,13 @@ footer {
   line-height: 2;
   border: 1px solid #ddd;
   border-radius: 0.25em;
+}
+
+.product-information,
+.card,
+.edition-horizontal,
+.product-detail-teaser {
+  margin-bottom: var(--margin-bottom-mobile);
 }
 
 /* Checkout page */
@@ -938,6 +949,7 @@ footer {
     max-width: 1372px;
     overflow-x: auto;
     gap: 18px;
+    margin: 0;
   }
   .horizontal-image {
     max-height: 495px;
@@ -1004,7 +1016,7 @@ footer {
 /* Read more card */
 .card {
   background-color: white;
-  padding: 10px;
+  padding-bottom: 10px;
   margin: 25px auto;
 }
 
