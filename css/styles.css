@@ -105,10 +105,10 @@ body {
   /* background: var(--gradient-23); */
 }
 
-main {
+/* main {
   max-width: 1372px;
   margin: 0 auto;
-}
+} */
 
 a {
   text-decoration: none;
@@ -176,33 +176,6 @@ button {
   color: black;
 }
 
-/* .search-field i {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-} */
-
-/* #sort-by,
-#category {
-  min-width: 310px;
-  min-height: 51px;
-  background-color: var(--header-mobile);
-  color: white;
-  font-size: var(--mobile-font-small);
-} */
-
-/* select {
-  box-shadow: 0 10px 20px (0, 0, 0, 0);
-  font-size: var(--mobile-font-small);
-  padding: 1em 1.5em;
-  background-color: var(--header-mobile);
-  color: white;
-  min-width: 310px;
-  min-height: 51px;
-} */
-
 /* Header */
 
 header {
@@ -212,6 +185,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 25px 10px;
+  position: sticky;
+  top: 0;
 }
 
 .header-logo,
@@ -306,7 +281,7 @@ footer {
   grid-template-rows: 1fr 1fr 1fr;
   min-height: 581px;
   grid-gap: 18px;
-  margin: 0 15px;
+  margin: 0 10%;
 }
 .grid-image {
   height: 100%;
@@ -370,20 +345,39 @@ footer {
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-.currently-trending-hero-img {
-  max-width: 430px;
+  margin-bottom: var(--margin-bottom-mobile);
 }
 
 .currently-trending-row {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .currently-trending-column {
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
+}
+
+.currently-trending-column p:first-child {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.currently-trending-column p:nth-child(2) {
+  display: none;
+}
+
+@media (width>=768px) {
+  .currently-trending-column p:nth-child(2) {
+    display: block;
+    font-size: 16px;
+    font-weight: lighter;
+    width: 100%;
+  }
 }
 
 .currently-trending-hero {
@@ -408,11 +402,20 @@ footer {
   position: relative;
   bottom: 50px;
 }
+@media (width>=1280px) {
+  .in-game-footage {
+    max-height: 312px;
+    max-width: 420px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    bottom: 5%;
+    left: 5%;
+  }
+}
 
 .trending-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  margin-top: 3px;
 }
 
 /* Store page - hero section */
@@ -467,12 +470,18 @@ footer {
 
 .select-console-mobile {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   color: white;
-  gap: 20px 60px;
-  margin: 10px 40px;
+  gap: 20px;
+  max-width: 350px;
+  margin: 15px auto;
+}
+
+.select-console-mobile h1 {
+  grid-column: -1/1;
+  grid-row: -1/1;
+  margin-bottom: 0;
 }
 
 .fa-playstation,
@@ -480,10 +489,10 @@ footer {
 .fa-computer,
 .fa-gamepad {
   font-size: 40px;
-  width: 100%;
   text-align: center;
-  background: var(--gradient-6);
+  background-color: var(--button-grey);
   box-shadow: var(--shadow-3);
+  padding: 5px;
 }
 
 /* Product details */
@@ -962,7 +971,7 @@ footer {
     overflow-x: auto;
     overflow-y: hidden;
     gap: 18px;
-    margin: 0;
+    margin: 0 auto;
   }
   .horizontal-image {
     max-width: 444px;
