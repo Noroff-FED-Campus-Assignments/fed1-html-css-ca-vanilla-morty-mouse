@@ -294,17 +294,20 @@ footer {
   max-width: 320px;
 }
 
-.grid-img1 {
-  float: right;
-}
+@media (width<1280px) {
+  .grid-img1 {
+    float: right;
+  }
 
-.grid-img2 {
-  float: left;
+  .grid-img2 {
+    float: left;
+  }
 }
 
 @media (width>=1280px) {
   .grid-image {
     min-width: 444px;
+    max-width: 444px;
     height: 100%;
     max-height: 495px;
   }
@@ -360,6 +363,7 @@ footer {
 .horizontal-image {
   height: 100%;
   max-width: 165px;
+  max-height: 160px;
   cursor: pointer;
 }
 
@@ -545,6 +549,8 @@ footer {
   .fa-computer,
   .fa-gamepad {
     padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1115,6 +1121,7 @@ footer {
 
   .horizontal-image {
     max-width: 335px;
+    max-height: 320px;
   }
 }
 
@@ -1164,6 +1171,7 @@ footer {
   }
   .horizontal-image {
     max-width: 444px;
+    max-height: 420px;
   }
 
   .trending-horizontal {
