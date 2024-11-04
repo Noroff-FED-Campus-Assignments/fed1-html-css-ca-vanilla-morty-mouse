@@ -107,16 +107,7 @@ body {
   margin: 0px;
   background-color: var(--background-color);
   min-height: 100dvh;
-  /* min-width: fit-content; */
-  /* display: grid; */
-  /* grid-template-rows: auto 1fr auto; */
-  /* background: var(--gradient-23); */
 }
-
-/* main {
-  max-width: 1372px;
-  margin: 0 auto;
-} */
 
 a {
   text-decoration: none;
@@ -215,6 +206,7 @@ header nav a {
 
   &:is(:hover, :focus) {
     background-color: var(--red-12);
+    font-size: 120%;
   }
 }
 
