@@ -53,32 +53,39 @@
     </header>
 
     <main>
-      <form action="contact.html" class="contact-form">
-        <label for="form-full-name"> Full name:</label>
-        <input
-          type="text"
-          id="form-full-name"
-          name="form-full-name"
-          placeholder="Bob Johanson"
-        />
+      <section class="contact-hero">
+        <h1>Contact us</h1>
+        <p>
+          Whether you have questions, feedback, or need assistance, feel free to
+          reach out. Our team is available and ready to provide the support you
+          need. Get in touch with us through the form below, or contact us
+          directly via phone or email. We look forward to hearing from you!
+        </p>
 
-        <label for="form-email">Email adress:</label>
-        <input
-          type="email"
-          id="form-email"
-          name="form-email"
-          placeholder="Bob@hotmail.com"
-        />
-        <label for="form-message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          cols="30"
-          placeholder="Write your message.."
-        ></textarea>
-        <input type="submit" value="Submit" class="c-mobile btn" />
-      </form>
+        <div class="contact-form-container">
+          <form action="contact.html" class="contact-form">
+            <label for="form-full-name"> Full name:</label>
+            <input type="text" id="form-full-name" name="form-full-name" />
+
+            <label for="form-email">Email adress:</label>
+            <input type="email" id="form-email" name="form-email" />
+            <label for="form-message">Message</label>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+            <input
+              type="submit"
+              value="Submit"
+              class="c-mobile btn"
+              id="c-contact-btn"
+            />
+          </form>
+        </div>
+      </section>
+
+      <div class="contact-information">
+        <p>Email adress: Gamehub@gamehub.com</p>
+        <p>Telephone: +45 45 45 45</p>
+        <p>Adress: Osloveien 51, 0223 Oslo, Norway</p>
+      </div>
     </main>
     <footer>
       <section>

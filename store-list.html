@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamehub</title>
+    <meta name="author" content="Morten Lillehaug" />
+    <meta
+      name="keywords"
+      content="games, playstation, xbox, nintendo, webshop"
+    />
+    <meta name="title" content="Gamehub" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-mobile">
+      <div>
+        <a href="index.html" class="header-link">
+          <img
+            src="media/GameHub_Logo.png"
+            alt="gamehub logo"
+            class="header-logo"
+        /></a>
+      </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <a href="index.html">Home Page</a>
+        <a href="store.html">Store</a>
+        <a href="">Library</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="">My Profile</a>
+      </nav>
+    </header>
+    <main>
+      <section class="select-console-mobile">
+        <h1>Browse by console</h1>
+        <i class="fa-brands fa-playstation"></i>
+        <i class="fa-brands fa-xbox"></i>
+        <i class="fa-solid fa-computer"></i>
+        <i class="fa-solid fa-gamepad"></i>
+      </section>
+      <section class="dropdown dropdown--grid">
+        <div class="dropdown-categories">
+          <label for="sort-by"></label>
+          <select name="sort-by" id="sort-by">
+            <option value="default" disabled selected hidden>Sort By</option>
+            <option value="price">Price</option>
+            <option value="rating">Rating</option>
+            <option value="title">Title A-Z</option>
+          </select>
+
+          <label for="category"></label>
+          <select name="category" id="category">
+            <option value="default" disabled selected hidden>
+              Select Category
+            </option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="fps">First Person Shooter</option>
+            <option value="family">Family</option>
+            <option value="horror">Horror</option>
+            <option value="indie">Indie</option>
+            <option value="multiplayer">Multiplayer</option>
+            <option value="open world">Open World</option>
+            <option value="single-player">Single Player</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input type="text" class="search-bar" placeholder="Search:" />
+        </div>
+      </section>
+
+      <section class="store-list-grid">
+        <a href="product.detail.html">
+          <img
+            src="media/star-wars-small.jpg"
+            alt="Image of Star wars outlaws"
+            class="grid-image"
+        /></a>
+        <a href="product.detail.html">
+          <img
+            src="media/crash-bandicoot.jpg"
+            alt="Image of Crash Bandicoot - its about time"
+            class="grid-image"
+        /></a>
+        <a href="product.detail.html">
+          <img
+            src="media/helldivers-small.jpg"
+            alt="Image of Helldivers 2"
+            class="grid-image"
+        /></a>
+        <a href="product.detail.html">
+          <img
+            src="media/gta-small.png"
+            alt="Image of GTA Five"
+            class="grid-image"
+        /></a>
+        <a href="product.detail.html">
+          <img
+            src="media/ghost-small.jpg"
+            alt="Image of Ghost of Tsushima"
+            class="grid-image"
+        /></a>
+        <a href="product.detail.html">
+          <img
+            src="media/rainbow-six-siege.jpg"
+            alt="Imgae of rainbow Six Siege"
+            class="grid-image"
+          />
+        </a>
+        <a href="product.detail.html">
+          <img
+            src="media/hogwarts-legacy.jpg"
+            alt="Imgae of Hogwarts legacy"
+            class="grid-image"
+          />
+        </a>
+        <a href="product.detail.html">
+          <img
+            src="media/last-of-us-small.jpg"
+            alt="Imgae of Last of us 2"
+            class="grid-image"
+          />
+        </a>
+        <a href="product.detail.html">
+          <img
+            src="media/resident-evil-small.jpg"
+            alt="Imgae of Resident evil 4 remake"
+            class="grid-image"
+          />
+        </a>
+        <a href="product.detail.html">
+          <img
+            src="media/the-witcher.jpg"
+            alt="Imgae of The Witcher 3"
+            class="grid-image"
+          />
+        </a>
+        <a href="product.detail.html">
+          <img
+            src="media/farcry-six.jpg"
+            alt="Imgae of farcy 6"
+            class="grid-image"
+          />
+        </a>
+        <a href="product.detail.html">
+          <img
+            src="media/alan-wake-small.jpg"
+            alt="Imgae of Alan Wake"
+            class="grid-image"
+          />
+        </a>
+      </section>
+
+      <section class="store-pagination">
+        <div class="store-pagination-back">
+          <i class="fa-solid fa-chevron-left"></i>
+          <p>Last page</p>
+        </div>
+        <div class="store-pagination-next">
+          <i class="fa-solid fa-chevron-right"></i>
+          <p>Next page</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <h3>Company</h3>
+        <p>Contact us</p>
+        <p>About</p>
+        <p>Sponsor</p>
+      </section>
+      <section>
+        <h3>Resources</h3>
+        <p>Terms and conditions</p>
+        <p>Privacy policy</p>
+        <p>Blog</p>
+      </section>
+      <section class="footer-social-media">
+        <p>Follow us on:</p>
+        <div class="footer-media-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

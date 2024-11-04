@@ -75,6 +75,10 @@ body p {
   background-color: var(--button-mobile-hero);
   padding: 8px 40px;
   border-radius: 5px;
+
+  &:is(:hover, :focus) {
+    background-color: var(--red-12);
+  }
 }
 
 .c-btn-small {
@@ -92,6 +96,10 @@ body p {
   &:is(:hover, :focus) {
     background-color: var(--red-12);
   }
+}
+
+.btn-confirm {
+  background-color: var(--button-light);
 }
 
 body {
@@ -187,6 +195,7 @@ header {
   padding: 25px 10px;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .header-logo,
@@ -203,6 +212,10 @@ header nav a {
   width: 100%;
   border-radius: 5px;
   font-size: var(--header-font-size);
+
+  &:is(:hover, :focus) {
+    background-color: var(--red-12);
+  }
 }
 
 #menu-checkbox:checked ~ nav {
@@ -286,6 +299,16 @@ footer {
 .grid-image {
   height: 100%;
   width: 100%;
+  max-height: 335px;
+  max-width: 320px;
+}
+
+.grid-img1 {
+  float: right;
+}
+
+.grid-img2 {
+  float: left;
 }
 
 @media (width>=1280px) {
@@ -309,11 +332,21 @@ footer {
 }
 
 .horizontal-wrapper i:first-child {
-  left: 15px;
+  left: 5px;
 }
 
 .horizontal-wrapper i:nth-child(3) {
-  right: 15px;
+  right: 5px;
+}
+
+@media (width>=768px) {
+  .horizontal-wrapper i:first-child {
+    left: 15px;
+  }
+
+  .horizontal-wrapper i:nth-child(3) {
+    right: 15px;
+  }
 }
 
 .trending-horizontal {
@@ -322,7 +355,7 @@ footer {
   overflow-x: auto;
   overflow-y: hidden;
   gap: 18px;
-  margin: 0 auto;
+  margin: 0 auto 15px;
 }
 
 .trending-horizontal::-webkit-scrollbar {
@@ -401,6 +434,7 @@ footer {
   grid-area: picture-game;
   position: relative;
   bottom: 50px;
+  margin-right: 25px;
 }
 @media (width>=1280px) {
   .in-game-footage {
@@ -416,6 +450,7 @@ footer {
 
 .trending-btn {
   margin-top: 3px;
+  margin-right: 10px;
 }
 
 /* Store page - hero section */
@@ -493,6 +528,88 @@ footer {
   background-color: var(--button-grey);
   box-shadow: var(--shadow-3);
   padding: 5px;
+  cursor: pointer;
+  width: 90%;
+}
+
+@media (width>=768px) {
+  .select-console-mobile {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 688px;
+  }
+  .fa-playstation,
+  .fa-xbox,
+  .fa-computer,
+  .fa-gamepad {
+    padding: 10px;
+  }
+}
+
+@media (width>=1280px) {
+  .select-console-mobile {
+    max-width: 1372px;
+  }
+  .fa-playstation,
+  .fa-xbox,
+  .fa-computer,
+  .fa-gamepad {
+    padding: 15px;
+  }
+}
+
+/* Store list */
+
+.store-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 350px;
+  gap: 18px;
+  margin: 25px auto;
+}
+
+@media (width>=768px) {
+  .store-list-grid {
+    max-width: 688px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (width>=1280px) {
+  .store-list-grid {
+    max-width: 1372px;
+  }
+}
+
+.store-pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+  margin: 15px auto;
+}
+
+.store-pagination-back,
+.store-pagination-next {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.store-pagination-next i {
+  align-self: flex-end;
+}
+
+@media (width>=768px) {
+  .store-pagination {
+    max-width: 688px;
+  }
+
+  @media (width>=1280px) {
+    .store-pagination {
+      max-width: 1372px;
+    }
+  }
 }
 
 /* Product details */
@@ -595,33 +712,6 @@ footer {
   margin: 0 auto;
 }
 
-@media (width>=768px) {
-  .edition-horizontal {
-    max-width: 688px;
-  }
-
-  .product-information-section {
-    max-width: 668px;
-  }
-
-  .product-hero-section {
-    max-width: 668px;
-  }
-}
-
-@media (width>=1372px) {
-  .edition-horizontal {
-    max-width: 1372px;
-  }
-  .product-information-section {
-    max-width: 1372px;
-  }
-
-  .product-hero-section {
-    max-width: 1372px;
-  }
-}
-
 .product-detail-teaser {
   position: relative;
   background-color: black;
@@ -629,7 +719,7 @@ footer {
 
 .product-detail-teaser-ytb {
   position: absolute;
-  top: 40%;
+  bottom: 22%;
   left: 10%;
 }
 
@@ -667,6 +757,7 @@ footer {
 
 .product-detail-teaser-info p {
   font-size: var(--mobile-font-xs);
+  padding-bottom: 25px;
 }
 
 .read-more-state {
@@ -710,6 +801,53 @@ footer {
 .edition-horizontal,
 .product-detail-teaser {
   margin-bottom: var(--margin-bottom-mobile);
+}
+
+@media (width<=430px) {
+  .product-detail-teaser-ytb {
+    bottom: 25%;
+  }
+}
+
+@media (width>=768px) {
+  .edition-horizontal {
+    max-width: 688px;
+  }
+
+  .product-information-section {
+    max-width: 668px;
+  }
+
+  .product-hero-section {
+    max-width: 668px;
+  }
+
+  .product-detail-teaser img {
+    min-height: 200px;
+  }
+
+  .product-detail-teaser-ytb {
+    bottom: 13%;
+  }
+}
+
+@media (width>=1372px) {
+  .edition-horizontal {
+    max-width: 1372px;
+  }
+  .product-information-section {
+    max-width: 1372px;
+  }
+
+  .product-hero-section {
+    max-width: 1372px;
+  }
+  .product-detail-teaser-ytb {
+    bottom: 7%;
+  }
+  .product-detail-teaser img {
+    min-height: 250px;
+  }
 }
 
 /* Checkout page */
@@ -891,18 +1029,42 @@ footer {
 
 /* contact page */
 
+.contact-hero {
+  background-image: url("../media/pink-forest-desktop.jpg");
+  background-position-y: -21px;
+  height: 100dvh;
+
+  & p {
+    line-height: 176%;
+    padding: 25px;
+    text-align: left;
+    margin: 0;
+  }
+
+  & h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+}
+
+.contact-form-container {
+  background-color: white;
+  border: solid 2px black;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: var(--gap-small);
-  margin: var(--margin-mobile-sides);
+  margin: 0 40px;
+  padding-top: 20px;
+  padding-bottom: 70px;
 }
 
 .contact-form input,
 .contact-form textarea {
   min-height: 40px;
-  border-radius: 5px;
   border: solid 1px black;
   margin: 1px;
   padding: 1px;
@@ -913,8 +1075,44 @@ footer {
 }
 
 .contact-form label {
-  color: white;
+  color: black;
   text-align: center;
+}
+
+#c-contact-btn {
+  background-color: var(--button-light);
+  color: white;
+  margin-top: 56px;
+  min-width: 300px;
+  align-self: center;
+}
+
+@media (width>=768px) {
+  .contact-form {
+    max-width: 688px;
+    margin: 46px auto;
+  }
+
+  .contact-form-container {
+    margin: 0 auto;
+    height: 650px;
+  }
+
+  .contact-form label {
+    font-size: 20px;
+  }
+
+  .contact-form input {
+    min-height: 50px;
+  }
+}
+
+@media (width>=1280px) {
+  .contact-form-container {
+    margin: 0 auto;
+    height: 650px;
+    max-width: 90%;
+  }
 }
 
 /* media queries */
@@ -1142,6 +1340,7 @@ footer {
   bottom: 1.25rem;
   left: 50%;
   transform: translateX(-40%);
+  bottom: 5%;
 }
 
 .slider-nav a {
@@ -1154,4 +1353,8 @@ footer {
 
 ..slider-nav a:hover {
   opacity: 1;
+}
+
+.dropdown--grid {
+  margin-top: 25px;
 }
