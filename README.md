@@ -1,3 +1,6 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/e-_62uB-)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=16716404&assignment_repo_type=AssignmentRepo)
+
 # FED Exam - Vanilla Front-end Website
 
 This bootstrap template is intended to help you deliever a amazing website which delights your end-users. Feel free to change, remove or start your own project from scratch. Please replace any text which starts with an `_`. This read me should be updated with your relevant details and not just copy pasted here.
@@ -6,10 +9,10 @@ This bootstrap template is intended to help you deliever a amazing website which
 
 <!-- You must replace these links -->
 
-- [Brief](https://noroff.sharepoint.com/:b:/s/FED1OSL24/EXvJ9TMGmU9Fsok1mQq1H08BKzQaheKEX5-p2e9czBsIdQ?e=TDbpCH)
-- [Design](_LINK_TO_FIGMA_)
-- [Production deploy](_LINK_TO_WEBSITE_)
-- [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
+- [Brief]https://docs.google.com/document/d/1Y3kgttkD0sMGaSDMzgDT8HfeI7yXfWN5i_FfY8xkKII/edit?usp=sharing
+- [Design](https://www.figma.com/design/T03mrrQUO73HTumxTTObKm/Ca-assignment?node-id=0-1&node-type=canvas)
+- [Production deploy](https://morty-gamehub.netlify.app)
+- [Deployment CI](https://app.netlify.com/sites/morty-gamehub/overview)
 
 ## Deployment
 
@@ -20,7 +23,35 @@ You can update your deployment pipeling by editing the [vercel.json](https://ver
 
 ## Report
 
-_ADD_YOUR_REPORT_HERE_
+Writing my design in HTML and CSS has been a challenging experience, where the learning outcome has been good. The process has been both challenging and fun. Whenever I have met an obstacle it has been possible to overcome it through trial and error. However, some things have not been possible to achieve without using Javascript, and thus been outside the scope of this assignment. For example this became evident when trying to style one particular “select” element, which can be found on the store page of my design.
+
+That being said, I do feel like I could have achieved more with the time we were given. Even though we’ve had ample time to complete this assignment, I’ve been feeling stretched for time, and I know that there are still improvements that can be made to the design. Due to some unfortunate personal events that collided with this, I’ve been more preoccupied than I would have hoped for during this week. However, that is no excuse, and I do feel like I’ve accomplished satisfactional work with the time I’ve used.
+
+At one point I managed to delete my repository, due to a severe misunderstanding of how it really works. I wanted to switch the commit location, and thought I could just delete the repository on Github. In doing so, my whole project got deleted, and I feared the worst. Luckily I managed to retrieve the code due to sheer luck, but all the images needed to be added anew.
+
+Key takeaways:
+
+Media queries:
+Media queries have been the building stone to create a responsive website. I started out coding my design for mobile view. Only after completing all pages on mobile did I begin to think about tablet and desktop. Looking forward, I might make each page fully responsive before moving forward to the next on future work.
+
+Another challenge has been to decide which width to set the breaking points. Using the developer tool on chrome, I found that the Ipad mini starts at 768px width, so this became my tablet view. After that I decided to make 1280px my desktop breaking point.
+
+Initially, all media queries were located at the bottom of my CSS as a structure. However, as time progressed and I felt short with time, I put them underneath the original class in CSS. To be honest, I’m not sure what I like the most, but I think that keeping media queries straight underneath its element in CSS makes sense.
+
+Dry:
+In future projects, I will keep the concept of DRY at the top of mind continually as it becomes more and more challenging the more lines of code I write. I’m certain that some code could be merged, specifically on this project relating to max-width on media queries.
+
+Images:
+Looking back, what I found to be the most difficult was styling images and making them responsive. I found that styling images with grid and flexbox work a little bit different, which became a source of frustration. At one point I was satisfied, only to find that every image looked wrong when I put anchor tags on it.
+
+Additionally, some places needed images with greater size than 300kbs because it simply looked too grainy. This is typically the banner photos at the desktop view.
+
+In summary, I’ve learned a lot about some key challenges and how to better face them in future projects. I feel confident that my work will be even better next time. Additionally, when we learn Javascript I’m looking forward to making even more complicated designs.
+
+Sources:
+
+The read more section has been taken from: https://codepen.io/Idered/pen/ExYROd
+Some styling has been taken from: https://open-props.style/
 
 ## Getting Started
 
@@ -32,44 +63,44 @@ In the project directory, you can run:
 
 All of these todo's must be done to pass the asssignment.
 
-- [ ] The project has a readme with a link to the live site and a link to the figma design.
-- [ ] The project has an publically accessible git repository.
-- [ ] The project has a live site (Can be hosted on Netlify or vercel for free).
-- [ ] The project has a rationale document that explains the design decisions you made.
-- [ ] Your last commit must be before your deadline.
-- [ ] You may use a build tool such as Vite, Parcel but not a framework like Gatsby or Next.js.
-- [ ] The project has been submitted on Moodle
+- [x] The project has a readme with a link to the live site and a link to the figma design.
+- [x] The project has an publically accessible git repository.
+- [x] The project has a live site (Can be hosted on Netlify or vercel for free).
+- [x] The project has a rationale document that explains the design decisions you made.
+- [x] Your last commit must be before your deadline.
+- [x] You may use a build tool such as Vite, Parcel but not a framework like Gatsby or Next.js.
+- [x] The project has been submitted on Moodle
 
 ## Checklist
 
 Make sure you go through this checklist before submitting your project to Moodle.
 
-- [ ] All pages have a meta description.
-- [ ] All pages have a valid title.
-- [ ] All pages import the correct css files.
-- [ ] All pages import the correct JS file.
-- [ ] Input fields have the following attributes;
-- [ ] All images have an alt tag;
-  - [ ] A name,
-  - [ ] A placeholder,
-  - [ ] A aria-describedby,
-  - [ ] Required
-- [ ] I have not copied Javascript code.
-- [ ] I have not used a Javascript library.
-- [ ] Removed all unused files.
-- [ ] Named all images properly.
-- [ ] Committed all my code to github.
-- [ ] My repo is publically viewable.
-- [ ] I've submitted/ written a report.
-- [ ] I've removed all todo notes in code.
-- [ ] I've removed all console logs in code.
-- [ ] Code is formatted correctly.
-- [ ] There are no red underlines in VSCode.
-- [ ] There are no error messages in the terminal when I run the project.
-- [ ] My code is indented correctly.
-- [ ] I've checked my report for grammer & spelling using grammerly or chatGPT
-- [ ] I've used used [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [ ] I've checked off every todo in this README.
+- [x] All pages have a meta description.
+- [x] All pages have a valid title.
+- [x] All pages import the correct css files.
+- [x] All pages import the correct JS file.
+- [x] Input fields have the following attributes;
+- [x] All images have an alt tag;
+  - [x] A name,
+  - [x] A placeholder,
+  - [x] A aria-describedby,
+  - [x] Required
+- [x] I have not copied Javascript code.
+- [x] I have not used a Javascript library.
+- [x] Removed all unused files.
+- [x] Named all images properly.
+- [x] Committed all my code to github.
+- [x] My repo is publically viewable.
+- [x] I've submitted/ written a report.
+- [x] I've removed all todo notes in code.
+- [x] I've removed all console logs in code.
+- [x] Code is formatted correctly.
+- [x] There are no red underlines in VSCode.
+- [x] There are no error messages in the terminal when I run the project.
+- [x] My code is indented correctly.
+- [x] I've checked my report for grammer & spelling using grammerly or chatGPT
+- [x] I've used used [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [x] I've checked off every todo in this README.
 
 ## Brief
 
@@ -97,5 +128,5 @@ You are allowed to use external libraries such as animation.css or open-props, b
 
 ## Authors
 
-- _YOURE_NAME_ (@_your_github_username_)
+- Morten Lillehaug (@Mortmeister)
 - Monde Sineke (@S3ak)
