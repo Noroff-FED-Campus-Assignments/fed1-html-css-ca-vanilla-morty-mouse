@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamehub</title>
+    <meta name="author" content="Morten Lillehaug" />
+    <meta name="keywords" content="games, contact page, message us" />
+    <meta name="title" content="Gamehub | contact us" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header-mobile">
+      <div>
+        <a href="index.html" class="header-link">
+          <img
+            src="media/GameHub_Logo.png"
+            alt="gamehub logo"
+            class="header-logo"
+        /></a>
+      </div>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <a href="index.html">Home Page</a>
+        <a href="store.html">Store</a>
+        <a href="">Library</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="">My Profile</a>
+        <a href="index.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <h1>Contact us</h1>
+        <p>
+          Whether you have questions, feedback, or need assistance, feel free to
+          reach out. Our team is available and ready to provide the support you
+          need. Get in touch with us through the form below, or contact us
+          directly via phone or email. We look forward to hearing from you!
+        </p>
+
+        <div class="contact-form-container">
+          <form action="contact.html" class="contact-form">
+            <label for="form-full-name"> Full name:</label>
+            <input type="text" id="form-full-name" name="form-full-name" />
+
+            <label for="form-email">Email adress:</label>
+            <input type="email" id="form-email" name="form-email" />
+            <label for="form-message">Message</label>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+            <input
+              type="submit"
+              value="Submit"
+              class="c-mobile btn"
+              id="c-contact-btn"
+            />
+          </form>
+        </div>
+      </section>
+
+      <div class="contact-information">
+        <p>Email adress: Gamehub@gamehub.com</p>
+        <p>Telephone: +45 45 45 45</p>
+        <p>Adress: Osloveien 51, 0223 Oslo, Norway</p>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <h3>Company</h3>
+        <p>Contact us</p>
+        <p>About</p>
+        <p>Sponsor</p>
+      </section>
+      <section>
+        <h3>Resources</h3>
+        <p>Terms and conditions</p>
+        <p>Privacy policy</p>
+        <p>Blog</p>
+      </section>
+      <section class="footer-social-media">
+        <p>Follow us on:</p>
+        <div class="footer-media-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
